@@ -39,7 +39,6 @@ Now implement the two functions curry and uncurry.
 
 let curry (uncurried : ('a * 'b) -> 'c) (x : 'a) (y: 'b) : 'c  = 
   uncurried (x,y) ;;
-  ;;
      
 let uncurry (curried : 'a -> 'b -> 'c) ((x, y) : ('a * 'b)): 'c = 
   curried x y ;;
